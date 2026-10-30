@@ -1,0 +1,39 @@
+{
+  "name": "staleagent",
+  "version": "0.1.0",
+  "description": "Metadata-only heartbeat wrapper for scheduled AI agents. Sends exit code, duration, byte counts, and an optional stdout hash. Never sends prompts, outputs, env, or keys.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "staleagent": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staleagent/staleagent-cli.git"
+  },
+  "homepage": "https://github.com/staleagent/staleagent-cli#readme",
+  "bugs": {
+    "url": "https://github.com/staleagent/staleagent-cli/issues"
+  },
+  "keywords": [
+    "staleagent",
+    "healthcheck",
+    "heartbeat",
+    "cron",
+    "monitoring",
+    "ai-agent",
+    "cli"
+  ],
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  }
+}
